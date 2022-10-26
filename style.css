@@ -1,0 +1,127 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  background-color: #222;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  background-color: bisque;
+  width: 100%;
+  min-height: 100vh;
+  transform-origin: top left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.container.show {
+  transform: rotate(-25deg);
+}
+.container .close {
+  display: none;
+}
+
+.container.show .open {
+  display: none;
+}
+.container.show .close {
+  display: block;
+  top: 55%;
+  left: 40%;
+}
+
+.content h1 {
+  margin-bottom: 10px;
+}
+
+.content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.content small {
+  color: #444;
+}
+
+.content p {
+  color: #222;
+  line-height: 1.5;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: orange;
+  position: relative;
+}
+
+.circle-container {
+  left: -50px;
+  position: fixed;
+  top: -50px;
+}
+
+.close {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: none;
+  border: none;
+  color: azure;
+  font-size: 33px;
+}
+
+.open {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: none;
+  border: none;
+  color: azure;
+  font-size: 27px;
+}
+
+.menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.menu li i {
+  margin-right: 5px;
+  margin-bottom: 10px;
+  color: aliceblue;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.menu li:nth-child(2) {
+  margin-left: 20px;
+}
+
+.menu li:nth-child(3) {
+  margin-left: 40px;
+}
+
+.menu li a {
+  color: aliceblue;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
